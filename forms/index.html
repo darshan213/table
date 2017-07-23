@@ -100,25 +100,25 @@
                   <tr>
                   <th>Granule Cost</th>
                   <th><input type="number" name="GranuleCostUSD" ng-model="Granule_Cost_KG" id="GranuleCostUSD"></th>
-                  <th>{{Granule_Cost_KG * ConversionUSDToINR}}</th>  
+                  <th>{{Granule_Cost_LB}}</th>  
                   </tr>
                   
                   <tr>
                   <th>Freight Cost</th>
                   <th><input type="number" name="FreightCostUSD" ng-model="Frieght_Cost_KG" id="FreightCostUSD"></th>
-                  <th>{{Frieght_Cost_KG * ConversionUSDToINR}}</th>
+                  <th>{{Frieght_Cost_LB}}</th>
                   </tr>
                   
                   <tr>
                   <th>Excise Duty</th>
                   <th><input type="number" name="ExciseDutyUSD" ng-model="Excise_Duty_KG" id="ExciseDutyUSD"></th>
-                  <th>{{Excise_Duty_KG * ConversionUSDToINR}}</th>  
+                  <th>{{Excise_Duty_LB}}</th>  
                   </tr>
                   
                   <tr>
                   <th>Total</th>
-                  <th>{{Total_KG}}</th>
-                  <th>{{Total_KG * ConversionUSDToINR}}</th>  
+                  <th>{{Granule_Cost_KG + Frieght_Cost_KG + Excise_Cost_KG}}</th>
+                  <th>{{Granule_Cost_LB + Frieght_Cost_LB + Excise_Cost_LB}}</th>  
                   </tr>
               </thead>
         
