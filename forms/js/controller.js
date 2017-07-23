@@ -6,7 +6,9 @@ app.controller('costCtrl', function($scope, $http) {
     $scope.Granule_Cost_KG = 0;
     $scope.Frieght_Cost_KG = 0;
     $scope.Excise_Duty_KG = 0;
-    $scope.Total_KG = $scope.Granule_Cost_KG + $scope.Frieght_Cost_KG + $scope.Excise_Duty_KG;
+    $scope.Granule_Cost_LB = $scope.Granule_Cost_KG * $scope.ConversionUSDToINR;
+    $scope.Frieght_Cost_LB = $scope.Frieght_Cost_KG * $scope.ConversionUSDToINR;
+    $scope.Excise_Duty_LB = $scope.Excise_Duty_KG * $scope.ConversionUSDToINR;
     
     
     function getRandomVal(min, max) {
