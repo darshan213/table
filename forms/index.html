@@ -22,28 +22,120 @@
     </header>
     <section id="body" class="container">
 
-      <!-- <ul class="pager">
-        <li class="previous"><a href="#">&larr; Prev</a></li>
-        <li class="next"><a href="#">Next &rarr;</a></li>
-      </ul> -->
-
-      <!-- <ul class="pagination">
-        <li class="disabled"><a href="#">&laquo;</a></li>
-        <li class="active"><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">&raquo;</a></li>
-      </ul> -->
-
-
-      
-        
-  
-      
-
-      <h3>Rates</h3>
+      <h3>Information Required</h3>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                 
+              </thead>
+                <tbody>
+                 <tr>
+                  <th>1 USD = </th>
+                  <th><input type="number" ng-model="ConversionRate" name="ConversionINR" id="ConversionINR"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Rate/LB USD</th>
+                  <th><input type="number" ng-model="rate_perLB_USD_input" name="Rate/USD" id="Rate/USD"></th>
+                  </tr>
+                  
+                  <tr>
+                  <th>Frieght INR</th>
+                  <th><input type="number" ng-model="Frieght_INR_input" name="FrieghtINR" id="FrieghtINR"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Excise Duty</th>
+                  <th><input type="number" ng-model="Excise_Duty_input" name="Excise_Duty" id="Excise_Duty"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Advance</th>
+                  <th><input type="number" ng-model="Advance_input" name="Advance" id="Advance"></th>  
+                  </tr>
+                    
+                
+                </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                 
+              </thead>
+                <tbody>
+                 <tr>
+                  <th>Item</th>
+                  <th><input type="text" ng-model="itemName_input" name="itemName" id="itemName"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Grade</th>
+                  <th><input type="text" ng-model="itemGrade_input" name="itemGrade" id="itemGrade"></th>
+                  </tr>
+                  
+                  <tr>
+                  <th>Melt Index</th>
+                  <th><input type="text" ng-model="MeltIndex_input" name="MeltIndexUSD" id="MeltIndexUSD"></th>
+                  </tr>
+                    
+                  <tr>
+                  <th>Qty. Available (LB)</th>
+                  <th><input type="number" ng-model="Qty_Available_LB_input" name="Qty_Available_LB" id="Qty_Available_LB"></th>
+                  </tr>
+                    
+                
+                </tbody>
+            </table>
+          </div>
+            <button ng-click="generateReport()">Submit</button>
+        </div>
+          
+      </div>
+    
+    <h3>Rates</h3>
+    <div class="row">
+        <div class="col-md-6">
+        <h4>Container Info</h4>
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+              </thead>
+                <tbody>
+                <tr>
+                  <th>Item</th>
+                  <th>{{itemName}}</th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Grade</th>
+                  <th>{{itemGrade}}</th>
+                  </tr>
+                  
+                  <tr>
+                  <th>Melt Index</th>
+                  <th>{{itemMeltIndex}}</th>
+                  </tr>
+                    
+                  <tr>
+                  <th>Qty. Available (LB)</th>
+                  <th>{{itemAvailableQty_LB}}</th>
+                  </tr>
+                 <tr>
+                  <th>Qty. Available (KG)</th>
+                  <th>{{itemAvailableQty_KG}}</th>
+                  </tr>
+                </tbody>
+        
+            </table>
+          </div>
+        </div>
+          <div class="col-md-6">
+          <h4>Rates</h4>
           <div class="table-responsive">
             <table class="table table-striped table-bordered table-hover table-condensed">
               <thead>
@@ -56,26 +148,26 @@
                 </tr>
                   <tr>
                   <th>Conversion</th>
-                  <th><input type="number" name="ConversionUSD" id="ConversionUSD"></th>
-                  <th>{{ConversionUSDToINR}}</th>  
+                  <th>1</th>
+                  <th>{{ConversionRate}}</th>  
                   </tr>
                   
                   <tr>
                   <th>Rate/LB</th>
-                  <th><input type="number" name="Rate/USD" id="Rate/USD"></th>
-                  <th><input type="number" name="Rate/INR" id="Rate/INR"></th>
+                  <th>{{RatePerLB_USD}}</th>
+                  <th>{{RatePerLB_INR}}</th>
                   </tr>
                   
                   <tr>
                   <th>Rate/KG</th>
-                  <th><input type="number" name="Rate/USD/KG" id="Rate/USD/KG"></th>
-                  <th><input type="number" name="Rate/INR/KG" id="Rate/INR/KG"></th>  
+                  <th>{{RatePerKG_USD}}</th>
+                  <th>{{RatePerKG_INR}}</th>
                   </tr>
                   
                   <tr>
                   <th>Frieght</th>
-                  <th><input type="number" name="FrieghtUSD" id="FrieghtUSD"></th>
-                  <th><input type="number" name="FrieghtINR" id="FrieghtINR"></th>  
+                  <th>{{Frieght_USD}}</th>
+                  <th>{{Frieght_INR}}</th>
                   </tr>
               </thead>
         
@@ -84,9 +176,10 @@
         </div>
       </div>
         
-        <h3>Cost Breakdown (Per KG)</h3>
+    <h3>Cost Breakdown</h3>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
+        <h4>Per KG</h4>
           <div class="table-responsive">
             <table class="table table-striped table-bordered table-hover table-condensed">
               <thead>
@@ -99,37 +192,34 @@
                 </tr>
                   <tr>
                   <th>Granule Cost</th>
-                  <th><input type="number" name="GranuleCostUSD" ng-model="Granule_Cost_KG" id="GranuleCostUSD"></th>
-                  <th>{{Granule_Cost_LB}}</th>  
+                  <th>{{Granule_Cost_USD}}</th>
+                  <th>{{Granule_Cost_INR}}</th>  
                   </tr>
                   
                   <tr>
                   <th>Freight Cost</th>
-                  <th><input type="number" name="FreightCostUSD" ng-model="Frieght_Cost_KG" id="FreightCostUSD"></th>
-                  <th>{{Frieght_Cost_LB}}</th>
+                  <th>{{Frieght_Cost_USD}}</th>
+                  <th>{{Frieght_Cost_INR}}</th>
                   </tr>
                   
                   <tr>
                   <th>Excise Duty</th>
-                  <th><input type="number" name="ExciseDutyUSD" ng-model="Excise_Duty_KG" id="ExciseDutyUSD"></th>
-                  <th>{{Excise_Duty_LB}}</th>  
+                  <th>{{Excise_Duty_USD}}</th>
+                  <th>{{Excise_Duty_INR}}</th>  
                   </tr>
                   
                   <tr>
                   <th>Total</th>
-                  <th>{{Granule_Cost_KG + Frieght_Cost_KG + Excise_Cost_KG}}</th>
-                  <th>{{Granule_Cost_LB + Frieght_Cost_LB + Excise_Cost_LB}}</th>  
+                  <th>{{Total_KG_USD}}</th>
+                  <th>{{Total_KG_INR}}</th>  
                   </tr>
               </thead>
         
             </table>
           </div>
         </div>
-      </div>
-
-          <h3>Cost Breakdown (Per LB)</h3>
-      <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6">
+        <h4>Per LB</h4>
           <div class="table-responsive">
             <table class="table table-striped table-bordered table-hover table-condensed">
               <thead>
@@ -374,7 +464,7 @@
 
   <script src="js/jquery-2.0.3.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script src="js/controller.js"></script>
 </body>
 
