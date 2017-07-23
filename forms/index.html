@@ -99,26 +99,26 @@
                 </tr>
                   <tr>
                   <th>Granule Cost</th>
-                  <th><input type="number" name="GranuleCostUSD" id="GranuleCostUSD"></th>
-                  <th><input type="number" name="GranuleCostINR" id="GranuleCostINR"></th>  
+                  <th><input type="number" name="GranuleCostUSD" ng-model="Granule_Cost_KG" id="GranuleCostUSD"></th>
+                  <th>{{GranuleCostUSD * ConversionUSDToINR}}</th>  
                   </tr>
                   
                   <tr>
                   <th>Freight Cost</th>
-                  <th><input type="number" name="FreightCostUSD" id="FreightCostUSD"></th>
-                  <th><input type="number" name="FreightCostINR" id="FreightCostINR"></th>
+                  <th><input type="number" name="FreightCostUSD" ng-model="Frieght_Cost_KG" id="FreightCostUSD"></th>
+                  <th>{{Frieght_Cost_KG * ConversionUSDToINR}}</th>
                   </tr>
                   
                   <tr>
                   <th>Excise Duty</th>
-                  <th><input type="number" name="ExciseDutyUSD" id="ExciseDutyUSD"></th>
-                  <th><input type="number" name="ExciseDutyIND" id="ExciseDutyIND"></th>  
+                  <th><input type="number" name="ExciseDutyUSD" ng-model="Excise_Duty_KG" id="ExciseDutyUSD"></th>
+                  <th>{{Excise_Duty_KG * ConversionUSDToINR}}</th>  
                   </tr>
                   
                   <tr>
                   <th>Total</th>
-                  <th><input type="number" name="TotalUSD" id="TotalUSD"></th>
-                  <th><input type="number" name="TotalINR" id="TotalINR"></th>  
+                  <th>{{Total_KG}}</th>
+                  <th>{{Total_KG * ConversionUSDToINR}}</th>  
                   </tr>
               </thead>
         
