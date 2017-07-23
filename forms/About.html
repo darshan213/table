@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container-Price Breakdown</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/amelia-bootstrap.min.css">
+  <link href="css/site.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="page">
+    <header class="container">     
+          <div id="logo">
+            <a href='.'>
+              <h4>Container- Price Breakdown</h4>
+            </a>
+          </div>
+       
+    </header>
+    <section id="body" class="container">
+
+      <!-- <ul class="pager">
+        <li class="previous"><a href="#">&larr; Prev</a></li>
+        <li class="next"><a href="#">Next &rarr;</a></li>
+      </ul> -->
+
+      <!-- <ul class="pagination">
+        <li class="disabled"><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul> -->
+
+
+      
+        
+  
+      
+
+      <h3>Rates</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>
+                      USD
+                 </th>
+                    <th>INR</th>
+                </tr>
+                  <tr>
+                  <th>Conversion</th>
+                  <th><input type="number" name="ConversionUSD" id="ConversionUSD"></th>
+                  <th><input type="number" name="ConversionINR" id="ConversionINR"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Rate/LB</th>
+                  <th><input type="number" name="Rate/USD" id="Rate/USD"></th>
+                  <th><input type="number" name="Rate/INR" id="Rate/INR"></th>
+                  </tr>
+                  
+                  <tr>
+                  <th>Rate/KG</th>
+                  <th><input type="number" name="Rate/USD/KG" id="Rate/USD/KG"></th>
+                  <th><input type="number" name="Rate/INR/KG" id="Rate/INR/KG"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Frieght</th>
+                  <th><input type="number" name="FrieghtUSD" id="FrieghtUSD"></th>
+                  <th><input type="number" name="FrieghtINR" id="FrieghtINR"></th>  
+                  </tr>
+              </thead>
+        
+            </table>
+          </div>
+        </div>
+      </div>
+        
+        <h3>Cost Breakdown (Per KG)</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>
+                      USD
+                 </th>
+                    <th>INR</th>
+                </tr>
+                  <tr>
+                  <th>Granule Cost</th>
+                  <th><input type="number" name="GranuleCostUSD" id="GranuleCostUSD"></th>
+                  <th><input type="number" name="GranuleCostINR" id="GranuleCostINR"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Freight Cost</th>
+                  <th><input type="number" name="FreightCostUSD" id="FreightCostUSD"></th>
+                  <th><input type="number" name="FreightCostINR" id="FreightCostINR"></th>
+                  </tr>
+                  
+                  <tr>
+                  <th>Excise Duty</th>
+                  <th><input type="number" name="ExciseDutyUSD" id="ExciseDutyUSD"></th>
+                  <th><input type="number" name="ExciseDutyIND" id="ExciseDutyIND"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Total</th>
+                  <th><input type="number" name="TotalUSD" id="TotalUSD"></th>
+                  <th><input type="number" name="TotalINR" id="TotalINR"></th>  
+                  </tr>
+              </thead>
+        
+            </table>
+          </div>
+        </div>
+      </div>
+
+          <h3>Cost Breakdown (Per LB)</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>
+                      USD
+                 </th>
+                    <th>INR</th>
+                </tr>
+                  <tr>
+                  <th>Granule Cost</th>
+                  <th><input type="number" name="GranuleCostUSD" id="GranuleCostUSD"></th>
+                  <th><input type="number" name="GranuleCostINR" id="GranuleCostINR"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Freight Cost</th>
+                  <th><input type="number" name="FreightCostUSD" id="FreightCostUSD"></th>
+                  <th><input type="number" name="FreightCostINR" id="FreightCostINR"></th>
+                  </tr>
+                  
+                  <tr>
+                  <th>Excise Duty</th>
+                  <th><input type="number" name="ExciseDutyUSD" id="ExciseDutyUSD"></th>
+                  <th><input type="number" name="ExciseDutyIND" id="ExciseDutyIND"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Total</th>
+                  <th><input type="number" name="TotalUSD" id="TotalUSD"></th>
+                  <th><input type="number" name="TotalINR" id="TotalINR"></th>  
+                  </tr>
+              </thead>
+        
+            </table>
+          </div>
+        </div>
+      </div>
+        
+          <h3>Cost Breakdown (Total)</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>
+                      USD
+                 </th>
+                    <th>INR</th>
+                </tr>
+                  <tr>
+                  <th>Granule Cost</th>
+                  <th><input type="number" name="GranuleCostUSD" id="GranuleCostUSD"></th>
+                  <th><input type="number" name="GranuleCostINR" id="GranuleCostINR"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Freight Cost</th>
+                  <th><input type="number" name="FreightCostUSD" id="FreightCostUSD"></th>
+                  <th><input type="number" name="FreightCostINR" id="FreightCostINR"></th>
+                  </tr>
+                  
+                  <tr>
+                  <th>Excise Duty</th>
+                  <th><input type="number" name="ExciseDutyUSD" id="ExciseDutyUSD"></th>
+                  <th><input type="number" name="ExciseDutyIND" id="ExciseDutyIND"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>Total</th>
+                  <th><input type="number" name="TotalUSD" id="TotalUSD"></th>
+                  <th><input type="number" name="TotalINR" id="TotalINR"></th>  
+                  </tr>
+              </thead>
+        
+            </table>
+          </div>
+        </div>
+      </div>
+
+          <h3>Payment Terms (frieght & Duty Excluded)</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th> </th>
+                  <th>
+                      USD
+                 </th>
+                    <th>INR</th>
+                </tr>
+                  <tr>
+                  <th>Advance</th>
+                  <th><input type="number" name="AdvanceUSD" id="AdvanceUSD"></th>
+                  <th><input type="number" name="AdvanceINR" id="AdvanceINR"></th>  
+                  </tr>
+                  
+                  <tr>
+                  <th>After Loading</th>
+                  <th><input type="number" name="AfterLoadingUSD" id="AfterLoadingUSD"></th>
+                  <th><input type="number" name="AfterLoadingINR" id="AfterLoadingINR"></th>
+                  </tr>
+                  
+                  
+              </thead>
+        
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+    
+
+
+      <div id="accordion" class="panel-group">
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <a href="#first" data-toggle="collapse" data-parent="#accordion">Information</a>
+            </div>
+          </div>
+          <div class="panel-collapse collapse in" id="first">
+            <div class="panel-body">
+              <h3>Information</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>
+                     <input type="date" name="Date" id="input">
+                    </th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Excise Duty</td>
+                <td> <input type="number" name="Excise" id="input"></td>
+              </tr>
+              <tr>
+                <td>Advance</td>
+                <td><input type="number" name="Advance" id="input"></td>
+              </tr>
+               </table>
+          </div>
+        </div>
+      </div>
+            </div>
+          </div>
+        </div>
+          
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <a href="#second" data-toggle="collapse" data-parent="#accordion">Container Information</a>
+            </div>
+          </div>
+          <div class="panel-collapse collapse" id="second">
+            <div class="panel-body">
+                <h3> Container Information</h3>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover table-condensed">
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>
+                     <input type="text" name="Item" id="Item1">
+                    </th>
+                </tr>
+              </thead>
+              <tr>
+                <td>Grade</td>
+                <td> <input type="text" name="Grade" id="Grade1"></td>
+              </tr>
+              <tr>
+                <td>Melt Index</td>
+                <td><input type="text" name="Melt Index" id="MeltIndex"></td>
+              </tr>
+                <tr>
+                    <td>Qty.Availble(lb)</td>
+                    <td>
+                        <input type="number" name="Quantity" id="Qty-lb">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Qty.Availble(KG)</td>
+                    <td><input type="number" name="Quantity KG" id="Qty-KG"></td>
+                </tr>
+            </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <a href="#third" data-toggle="collapse" data-parent="#accordion">Rates</a>
+            </div>
+          </div>
+          <div class="panel-collapse collapse" id="third">
+            <div class="panel-body">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+        <div class="panel panel-info">
+          <div class="panel-heading">
+            <div class="panel-title">
+              <a href="#third" data-toggle="collapse" data-parent="#accordion">Rates</a>
+            </div>
+          </div>
+          <div class="panel-collapse collapse" id="third">
+            <div class="panel-body">
+            </div>
+          </div>
+        </div>
+
+      
+
+    </section>
+    </div>
+    <hr/>
+      
+    <footer class="container">
+      
+
+    </footer>
+  
+
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
