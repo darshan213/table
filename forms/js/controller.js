@@ -2,6 +2,7 @@ var app = angular.module('costBreakdownApp', []);
 app.controller('costCtrl', function($scope, $http) {
     $scope.CompanyName = "Nav Exports";
     
+    $scope.ConversionUSDToINR = 65;
     $scope.Granule_Cost_KG = getRandomVal(1500, 3000);
     $scope.Frieght_Cost_KG = getRandomVal(1500, 3000);
     $scope.Excise_Duty_KG = getRandomVal(1500, 3000);
